@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SearchOfFile
+namespace EditTextFile
 {
 	static class Program
 	{
@@ -16,7 +16,7 @@ namespace SearchOfFile
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new SearchOfFileForm());
+			Application.Run(new LoadFileForm());
 		}
 	}
 }

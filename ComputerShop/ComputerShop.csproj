@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6D09011B-1F04-4D79-BDFC-164B409F7D2F}</ProjectGuid>
+    <ProjectGuid>{C8A25DAE-56B3-485A-B232-42379F1F06AF}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>SearchOfFile</RootNamespace>
-    <AssemblyName>SearchOfFile</AssemblyName>
+    <RootNamespace>ComputerShop</RootNamespace>
+    <AssemblyName>ComputerShop</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -45,22 +45,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SearchOfFileForm.cs">
+    <Compile Include="ComputerItem.cs" />
+    <Compile Include="CoputerShop.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SearchOfFileForm.Designer.cs">
-      <DependentUpon>SearchOfFileForm.cs</DependentUpon>
+    <Compile Include="CoputerShop.Designer.cs">
+      <DependentUpon>CoputerShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ItemEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ItemEditForm.Designer.cs">
+      <DependentUpon>ItemEditForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SelectFolderForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SelectFolderForm.Designer.cs">
-      <DependentUpon>SelectFolderForm.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="SearchOfFileForm.resx">
-      <DependentUpon>SearchOfFileForm.cs</DependentUpon>
+    <EmbeddedResource Include="CoputerShop.resx">
+      <DependentUpon>CoputerShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ItemEditForm.resx">
+      <DependentUpon>ItemEditForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -71,9 +75,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="SelectFolderForm.resx">
-      <DependentUpon>SelectFolderForm.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
